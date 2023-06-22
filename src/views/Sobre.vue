@@ -3,28 +3,28 @@
             
 
             <div class="container">
+          
 
-            <div v-for="personagem in personagens" :key="personagem.id">
-
-                <div class="row g-4">
-                    <div class="col-3 justify-content-center">
-                        <div class="card">
-                        <img :src="personagem.thumbnail.path+'.'+ personagem.thumbnail.extension" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">{{personagem.name}}</h5>
-                            <p class="card-text">
-                                {{personagem.description}}
-                            </p>
-                        </div>
-                        </div>
-                    </div>                  
+                <div class="row justify-content-center">
+                    <span class="col-3" v-for="personagem in personagens" :key="personagem.id">
+                        
+                            <div class="card ">
+                            <img :src="personagem.thumbnail.path+'.'+ personagem.thumbnail.extension" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">{{personagem.name}}</h5>
+                                <p class="card-text">
+                                    {{personagem.description}}
+                                </p>
+                            </div>
+                            </div>
+                    </span>                      
                 </div>
 
                 <div class="card">
 
                 </div>
 
-            </div>
+            
 
             </div>
     </div>  
